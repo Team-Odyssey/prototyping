@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{29db702f-1a62-85a1-9a29-5fbc0b372109}</ProjectGuid>
+    <ProjectGuid>{14d9ac99-1dac-ee94-0b97-d65d28dc46e9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\PrintToConsole.cs" />
+     <Compile Include="Assets\scripts\mover.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -572,31 +573,31 @@
         <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>E:/Team Odyssey/prototyping/HW_1/TeamA/Miguel/Experiment/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/16192/Documents/GitHub/prototyping/HW_1/TeamA/Tank Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
