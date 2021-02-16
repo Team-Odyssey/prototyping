@@ -1,23 +1,31 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class mover : MonoBehaviour
 {
-    [SerializeField] int moveSpeed = 1;
+    public CharacterController controller;
+    public Transform cam;
+    [SerializeField] public float speed = 6f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] public float turnSmoothTime = 0.1f;
 
-    // Update is called once per frame
+    float turnSmoothVelocity;
     void Update()
     {
-        float xValue = -Input.GetAxis("Horizontal")*Time.deltaTime;
-        float zValue = -Input.GetAxis("Vertical")*Time.deltaTime;
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(-horizontal, 0f, -vertical).normalized;
 
-        transform.Translate(xValue*moveSpeed,0,zValue*moveSpeed);
+        if(direction.magnitude >= 0.1f){
+
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(-moveDir.normalized * speed * Time.deltaTime);
+        }
+
     }
 }
